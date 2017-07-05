@@ -41,6 +41,7 @@ public class TestTitle
 	 @Test
 	 public void simpleTest() 
 	 {
+		 System.out.println("Test startet");
 		 driver.get("https://www.edureka.co/");
 		 Assert.assertEquals("Instructor Led Online Courses with 24x7 On-Demand Support | Edureka", driver.getTitle());
 	 }

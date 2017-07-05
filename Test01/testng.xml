@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-  	<classes>
+  	<classes> 
   		<class name="profi.com.Test01.TestTitle"/>
   	</classes>
   </test> <!-- Test -->

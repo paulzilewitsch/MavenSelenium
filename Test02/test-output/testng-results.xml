@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10925" started-at="2017-07-06T05:47:57Z" finished-at="2017-07-06T05:48:08Z">
+  <suite name="Default suite" duration-ms="31829" started-at="2017-07-06T08:10:16Z" finished-at="2017-07-06T08:10:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10925" started-at="2017-07-06T05:47:57Z" finished-at="2017-07-06T05:48:08Z">
-      <class name="testcases.MyTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.MyTest@6a4f787b]" name="setup" is-config="true" duration-ms="3969" started-at="2017-07-06T07:47:57Z" finished-at="2017-07-06T07:48:01Z">
+    <test name="Default test" duration-ms="31829" started-at="2017-07-06T08:10:16Z" finished-at="2017-07-06T08:10:48Z">
+      <class name="testcases.TestCalculator">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCalculator@1794d431]" name="setUp" is-config="true" duration-ms="3954" started-at="2017-07-06T10:10:16Z" finished-at="2017-07-06T10:10:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="simpleTest()[pri:0, instance:testcases.MyTest@6a4f787b]" name="simpleTest" duration-ms="5878" started-at="2017-07-06T07:48:01Z" finished-at="2017-07-06T07:48:07Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="StartApplication()[pri:0, instance:testcases.TestCalculator@1794d431]" name="StartApplication" duration-ms="3079" started-at="2017-07-06T10:10:20Z" finished-at="2017-07-06T10:10:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- simpleTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.MyTest@6a4f787b]" name="afterTest" is-config="true" duration-ms="1032" started-at="2017-07-06T07:48:07Z" finished-at="2017-07-06T07:48:08Z">
+        </test-method> <!-- StartApplication -->
+        <test-method status="PASS" signature="testBaufinanzierung_Antrag_Start()[pri:1, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Start" duration-ms="12094" started-at="2017-07-06T10:10:23Z" finished-at="2017-07-06T10:10:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testcases.MyTest -->
+        </test-method> <!-- testBaufinanzierung_Antrag_Start -->
+        <test-method status="PASS" signature="testBaufinanzierung_Antrag_Zinsen_Check()[pri:2, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Zinsen_Check" duration-ms="2296" started-at="2017-07-06T10:10:35Z" finished-at="2017-07-06T10:10:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaufinanzierung_Antrag_Zinsen_Check -->
+        <test-method status="PASS" signature="testBaufinanzierung_Antrag_Persoenlichen_Daten()[pri:3, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Persoenlichen_Daten" duration-ms="9469" started-at="2017-07-06T10:10:37Z" finished-at="2017-07-06T10:10:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaufinanzierung_Antrag_Persoenlichen_Daten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TestCalculator@1794d431]" name="tearDown" is-config="true" duration-ms="859" started-at="2017-07-06T10:10:47Z" finished-at="2017-07-06T10:10:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TestCalculator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -11,7 +11,7 @@ import org.testng.TestNG;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -29,16 +29,20 @@ public class TestCalculator {
 	public void setUp() throws Exception 
 	{  
 		nodeUrl = "http://172.16.20.161:4444/wd/hub";
-		 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		 capabilities.setBrowserName("chrome");
-		 capabilities.setPlatform(Platform.WIN8);
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		capabilities.setBrowserName("chrome");
+		capabilities.setPlatform(Platform.WIN8);
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		 
 		driver = new RemoteWebDriver(new URL(nodeUrl), capabilities);
 		baseURL="https://www.commerzbank.de/portal/de/privatkunden/produkte/finanzieren-und-erwerben/baufinanzierung/baufinanzierung.html";  
-	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);;
+	    //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);;
 	  }
 
-	  @Test (timeOut = 50000,  priority=0)
+	  @Test (timeOut = 5000,  priority=0)
 	  public void StartApplication() throws Exception{
 		  
 			//Startseite is called and loaded in  Firefox
@@ -49,7 +53,7 @@ public class TestCalculator {
 	  
 
 	  
-	  @Test (timeOut = 50000,  priority=1) 
+	  @Test (timeOut = 5000,  priority=1) 
 	  public void testBaufinanzierung_Antrag_Start() throws Exception {
 
 
@@ -103,7 +107,7 @@ public class TestCalculator {
 	    
 	  }
 	  
-	  @Test (timeOut = 50000,  priority=2)
+	  @Test (timeOut = 5000,  priority=2)
 	  public void testBaufinanzierung_Antrag_Zinsen_Check () throws Exception {
 
 	  
@@ -115,7 +119,7 @@ public class TestCalculator {
 	  }
 	  
 	  
-	  @Test (timeOut = 50000,  priority=3)
+	  @Test (timeOut = 5000,  priority=3)
 	  public void testBaufinanzierung_Antrag_Persoenlichen_Daten () throws Exception {
 	  
 	   // Page : Baufinanzierung Onlineantrag  - Persönlichen Daten
@@ -160,7 +164,7 @@ public class TestCalculator {
 	  }
 
 	  
-	@AfterClass (alwaysRun = true, timeOut = 50000)
+	@AfterClass (alwaysRun = true, timeOut = 5000)
 	  public void tearDown() throws Exception {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.quit();

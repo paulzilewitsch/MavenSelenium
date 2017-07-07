@@ -4,6 +4,7 @@ import java.net.URL;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -24,6 +25,10 @@ public class MyTest
 		 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		 capabilities.setBrowserName("chrome");
 		 capabilities.setPlatform(Platform.WIN8);
+		 
+		 ChromeOptions options = new ChromeOptions();
+		 options.addArguments("disable-infobars");
+         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		 
 		 driver = new RemoteWebDriver(new URL(nodeUrl), capabilities);
 		 

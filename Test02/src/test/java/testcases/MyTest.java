@@ -43,7 +43,7 @@ public class MyTest
 	 @Test
 	 public void simpleTest() 
 	 {
-		 System.out.println("Test startet");
+		 System.out.println("Test ist gestartet");
 		 driver.get("https://www.edureka.co/");
 		 Assert.assertEquals("Instructor Led Online Courses with 24x7 On-Demand Support | Edureka", driver.getTitle());
 	 }
@@ -51,6 +51,7 @@ public class MyTest
 	 @AfterTest
 	 public void afterTest() 
 	 {
+		 System.out.println("Test ist fertig");
 		 driver.quit();
 	 }
 }

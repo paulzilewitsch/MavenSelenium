@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14036" started-at="2017-07-07T08:06:22Z" finished-at="2017-07-07T08:06:36Z">
+  <suite name="Default suite" duration-ms="15595" started-at="2017-07-10T12:21:44Z" finished-at="2017-07-10T12:22:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14036" started-at="2017-07-07T08:06:22Z" finished-at="2017-07-07T08:06:36Z">
+    <test name="Default test" duration-ms="15595" started-at="2017-07-10T12:21:44Z" finished-at="2017-07-10T12:22:00Z">
       <class name="testcases.TestCalculator">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCalculator@1794d431]" name="setUp" is-config="true" duration-ms="4000" started-at="2017-07-07T10:06:22Z" finished-at="2017-07-07T10:06:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCalculator@1794d431]" name="setUp" is-config="true" duration-ms="4986" started-at="2017-07-10T14:21:44Z" finished-at="2017-07-10T14:21:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="StartApplication()[pri:0, instance:testcases.TestCalculator@1794d431]" name="StartApplication" duration-ms="2552" started-at="2017-07-07T10:06:26Z" finished-at="2017-07-07T10:06:28Z">
+        <test-method status="PASS" signature="StartApplication()[pri:0, instance:testcases.TestCalculator@1794d431]" name="StartApplication" duration-ms="2797" started-at="2017-07-10T14:21:49Z" finished-at="2017-07-10T14:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartApplication -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Start()[pri:1, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Start" duration-ms="5031" started-at="2017-07-07T10:06:28Z" finished-at="2017-07-07T10:06:33Z">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Start()[pri:1, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Start" duration-ms="5015" started-at="2017-07-10T14:21:52Z" finished-at="2017-07-10T14:21:57Z">
           <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
               <![CDATA[0]]>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Start -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Zinsen_Check()[pri:2, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Zinsen_Check" duration-ms="562" started-at="2017-07-07T10:06:33Z" finished-at="2017-07-07T10:06:34Z">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Zinsen_Check()[pri:2, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Zinsen_Check" duration-ms="329" started-at="2017-07-10T14:21:57Z" finished-at="2017-07-10T14:21:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<Angaben zu Ihrer Finanzierung> but was:<Zinscheck>]]>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Zinsen_Check -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Persoenlichen_Daten()[pri:3, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Persoenlichen_Daten" duration-ms="266" started-at="2017-07-07T10:06:34Z" finished-at="2017-07-07T10:06:34Z">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Persoenlichen_Daten()[pri:3, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Persoenlichen_Daten" duration-ms="469" started-at="2017-07-10T14:21:58Z" finished-at="2017-07-10T14:21:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<Angaben zu Ihrer Finanzierung> but was:<Persönliche Angaben>]]>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Persoenlichen_Daten -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TestCalculator@1794d431]" name="tearDown" is-config="true" duration-ms="1468" started-at="2017-07-07T10:06:34Z" finished-at="2017-07-07T10:06:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TestCalculator@1794d431]" name="tearDown" is-config="true" duration-ms="1891" started-at="2017-07-10T14:21:58Z" finished-at="2017-07-10T14:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

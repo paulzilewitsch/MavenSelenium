@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
 <properties>
-    <runSuite>src/test/java/testcases/AllTests.java</runSuite>
+    <runSuite>**/AllTests.java</runSuite>
 </properties>
 
   <dependencies>

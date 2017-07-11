@@ -156,15 +156,14 @@ public class TestCaculator
 	    driver.switchTo().window(winHandleBefore);
 	  }
 
-	  
 	@AfterClass
-	  public static void tearDown() throws Exception {
+	public static void tearDown() throws Exception 
+	{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.quit();
 	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString)) {
-	      Assert.fail(verificationErrorString);
-	    }
+	    if (!"".equals(verificationErrorString)) 
+	    	Assert.fail(verificationErrorString);
 	  }
 
 	  

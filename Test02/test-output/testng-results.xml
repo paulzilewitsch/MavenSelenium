@@ -2,55 +2,48 @@
 <testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15595" started-at="2017-07-10T12:21:44Z" finished-at="2017-07-10T12:22:00Z">
+  <suite name="Default suite" duration-ms="13459" started-at="2017-07-11T10:55:42Z" finished-at="2017-07-11T10:55:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15595" started-at="2017-07-10T12:21:44Z" finished-at="2017-07-10T12:22:00Z">
+    <test name="Default test" duration-ms="13459" started-at="2017-07-11T10:55:42Z" finished-at="2017-07-11T10:55:56Z">
       <class name="testcases.TestCalculator">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCalculator@1794d431]" name="setUp" is-config="true" duration-ms="4986" started-at="2017-07-10T14:21:44Z" finished-at="2017-07-10T14:21:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCalculator@1794d431]" name="setUp" is-config="true" duration-ms="6224" started-at="2017-07-11T12:55:42Z" finished-at="2017-07-11T12:55:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="StartApplication()[pri:0, instance:testcases.TestCalculator@1794d431]" name="StartApplication" duration-ms="2797" started-at="2017-07-10T14:21:49Z" finished-at="2017-07-10T14:21:52Z">
+        <test-method status="PASS" signature="StartApplication()[pri:0, instance:testcases.TestCalculator@1794d431]" name="StartApplication" duration-ms="3985" started-at="2017-07-11T12:55:49Z" finished-at="2017-07-11T12:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartApplication -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Start()[pri:1, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Start" duration-ms="5015" started-at="2017-07-10T14:21:52Z" finished-at="2017-07-10T14:21:57Z">
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Start()[pri:1, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Start" duration-ms="860" started-at="2017-07-11T12:55:53Z" finished-at="2017-07-11T12:55:54Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[0]]>
+              <![CDATA[expected:<Commerzbank Finanzierungsanfrage> but was:<>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 0
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:289)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:246)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:667)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+              <![CDATA[java.lang.AssertionError: expected:<Commerzbank Finanzierungsanfrage> but was:<>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at testcases.TestCalculator.testBaufinanzierung_Antrag_Start(TestCalculator.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Start -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Zinsen_Check()[pri:2, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Zinsen_Check" duration-ms="329" started-at="2017-07-10T14:21:57Z" finished-at="2017-07-10T14:21:58Z">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Zinsen_Check()[pri:2, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Zinsen_Check" duration-ms="1687" started-at="2017-07-11T12:55:54Z" finished-at="2017-07-11T12:55:55Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<Angaben zu Ihrer Finanzierung> but was:<Zinscheck>]]>
@@ -59,7 +52,7 @@
               <![CDATA[java.lang.AssertionError: expected:<Angaben zu Ihrer Finanzierung> but was:<Zinscheck>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at testcases.TestCalculator.testBaufinanzierung_Antrag_Zinsen_Check(TestCalculator.java:116)
+	at testcases.TestCalculator.testBaufinanzierung_Antrag_Zinsen_Check(TestCalculator.java:120)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -78,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Zinsen_Check -->
-        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Persoenlichen_Daten()[pri:3, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Persoenlichen_Daten" duration-ms="469" started-at="2017-07-10T14:21:58Z" finished-at="2017-07-10T14:21:58Z">
+        <test-method status="FAIL" signature="testBaufinanzierung_Antrag_Persoenlichen_Daten()[pri:3, instance:testcases.TestCalculator@1794d431]" name="testBaufinanzierung_Antrag_Persoenlichen_Daten" duration-ms="78" started-at="2017-07-11T12:55:55Z" finished-at="2017-07-11T12:55:55Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<Angaben zu Ihrer Finanzierung> but was:<Persönliche Angaben>]]>
@@ -87,7 +80,7 @@
               <![CDATA[java.lang.AssertionError: expected:<Angaben zu Ihrer Finanzierung> but was:<Persönliche Angaben>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at testcases.TestCalculator.testBaufinanzierung_Antrag_Persoenlichen_Daten(TestCalculator.java:127)
+	at testcases.TestCalculator.testBaufinanzierung_Antrag_Persoenlichen_Daten(TestCalculator.java:131)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -106,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaufinanzierung_Antrag_Persoenlichen_Daten -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TestCalculator@1794d431]" name="tearDown" is-config="true" duration-ms="1891" started-at="2017-07-10T14:21:58Z" finished-at="2017-07-10T14:22:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TestCalculator@1794d431]" name="tearDown" is-config="true" duration-ms="594" started-at="2017-07-11T12:55:55Z" finished-at="2017-07-11T12:55:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

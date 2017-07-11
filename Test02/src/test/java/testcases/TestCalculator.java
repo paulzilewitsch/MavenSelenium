@@ -29,14 +29,18 @@ public class TestCalculator {
 	public void setUp() throws Exception 
 	{  
 		nodeUrl = "http://172.16.20.161:4444/wd/hub";
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setBrowserName("chrome");
+//		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//		capabilities.setBrowserName("chrome");
+//		capabilities.setPlatform(Platform.WINDOWS);
+//		
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("disable-infobars");
+//      capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		 
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setBrowserName("firefox");
 		capabilities.setPlatform(Platform.WINDOWS);
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-infobars");
-        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		 
 		driver = new RemoteWebDriver(new URL(nodeUrl), capabilities);
 		baseURL="https://www.commerzbank.de/portal/de/privatkunden/produkte/finanzieren-und-erwerben/baufinanzierung/baufinanzierung.html";  
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);;

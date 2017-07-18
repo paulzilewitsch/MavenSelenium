@@ -10,11 +10,16 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.hp.lft.sdk.*;
+import com.hp.lft.sdk.web.Browser;
+import com.hp.lft.sdk.web.BrowserFactory;
+import com.hp.lft.sdk.web.BrowserType;
 import com.hp.lft.verifications.*;
 
 import unittesting.*;
 
-public class LeanFtTest extends UnitTestClassBase {
+public class LeanFtTest extends UnitTestClassBase 
+{
+	private Browser browser;
 
     public LeanFtTest() 
     {
@@ -35,15 +40,24 @@ public class LeanFtTest extends UnitTestClassBase {
     }
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception 
+    {
+    	browser = BrowserFactory.launch(BrowserType.FIREFOX);
+    	browser.navigate("https://www.proficom.de/");
+    	browser.sync();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() throws Exception 
+    {
+    	browser.close();
     }
 
     @Test
-    public void test() throws GeneralLeanFtException {
+    public void test() throws GeneralLeanFtException 
+    {
+    	String title = browser.getTitle();
+    	Verify.areEqual("profi.com AG business solutions | profi.com AG", title); 	
     }
 
 }

@@ -13,6 +13,7 @@ import com.hp.lft.sdk.*;
 import com.hp.lft.sdk.web.Browser;
 import com.hp.lft.sdk.web.BrowserFactory;
 import com.hp.lft.sdk.web.BrowserType;
+import com.hp.lft.sdk.web.Page;
 import com.hp.lft.verifications.*;
 
 import unittesting.*;
@@ -43,8 +44,7 @@ public class LeanFtTest extends UnitTestClassBase
     public void setUp() throws Exception 
     {
     	browser = BrowserFactory.launch(BrowserType.FIREFOX);
-    	browser.navigate("https://www.proficom.de/");
-    	browser.sync();
+//    	browser.navigate("https://www.proficom.de/");	
     }
 
     @After
@@ -56,8 +56,9 @@ public class LeanFtTest extends UnitTestClassBase
     @Test
     public void test() throws GeneralLeanFtException 
     {
+//    	browser.sync();
     	String title = browser.getTitle();
-    	Verify.areEqual("profi.com AG business solutions | profi.com AG", title); 	
+    	Verify.areEqual("Mozilla Firefox-Startseite", title);
     }
 
 }

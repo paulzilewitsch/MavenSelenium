@@ -2,16 +2,20 @@ package cucumberSteps;
 
 import static org.junit.Assert.assertEquals;
 
+import java.net.URL;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -22,14 +26,24 @@ public class Step01_Calculator
 	private static WebDriver driver;
 	private static StringBuffer verificationErrors = new StringBuffer();
 	private static String baseURL;
+	private static String nodeUrl;
 
 	public String winHandleBefore;
 	
 	@Given("^Firefox is open, web application is startet and web formular is given$")
 	public void Open_firefox_and_start_application() throws Throwable 
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-		driver = new FirefoxDriver();
+//		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+//		driver = new FirefoxDriver();
+		
+		nodeUrl = "http://172.16.20.161:4444/wd/hub";
+
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setBrowserName("firefox");
+		capabilities.setPlatform(Platform.WINDOWS);
+
+		driver = new RemoteWebDriver(new URL(nodeUrl), capabilities);
+		
 		baseURL = "https://www.commerzbank.de/portal/de/privatkunden/produkte/finanzieren-und-erwerben/baufinanzierung/baufinanzierung.html";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		

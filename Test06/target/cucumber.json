@@ -1,0 +1,58 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Test Commerzbank Calculator",
+        "description": "",
+        "id": "test-commerzbank-baufinanzierung;test-commerzbank-calculator",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15059514059,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Firefox is open, web application is startet and web formular is given",
+            "match": {
+              "location": "Step01_Calculator.Open_firefox_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15319877946,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "All required Fields are filled and user click calculation button",
+            "match": {
+              "location": "Step01_Calculator.Fill_all_required_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 750199117,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User get Calculation and application should be closed",
+            "match": {
+              "location": "Step01_Calculator.Get_Calculation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Commerzbank Baufinanzierung",
+    "description": "",
+    "id": "test-commerzbank-baufinanzierung",
+    "keyword": "Feature",
+    "uri": "MyFeatures.feature"
+  }
+]

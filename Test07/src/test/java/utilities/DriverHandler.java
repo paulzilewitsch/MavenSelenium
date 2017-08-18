@@ -22,7 +22,7 @@ public class DriverHandler {
 		// https://stackoverflow.com/questions/7883542/getting-the-computer-name-in-java
 		userName = System.getProperty("user.name");
 
-		if (userName == "WIN-0NMH0BG7FC5$") {
+		if (userName == "WIN-0NMH0BG7FC5") {
 
 			// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			// capabilities.setBrowserName("chrome");

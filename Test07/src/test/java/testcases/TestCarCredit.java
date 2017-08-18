@@ -33,14 +33,17 @@ public class TestCarCredit
 		baseURL = "https://www.commerzbank.de/portal/de/privatkunden/produkte/finanzieren-und-erwerben/autokredit/autokredit.html";
 		browserName= "Firefox";	
 		
-		driver = DriverHandler.getDriver(driver, browserName, baseURL);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
+		DriverHandler handler = new DriverHandler();
+		
+		driver = handler.getDriver(driver, browserName);
+		driver.get(baseURL);
+//		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 	}
 
 	@Test(timeout = 50000)
 	public void step_1_start_Application() throws Exception 
 	{
-		driver.get(baseURL);
 		System.out.println("setup ");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Termin vereinbaren")));
 		driver.findElement(By.linkText("Termin vereinbaren")).click();

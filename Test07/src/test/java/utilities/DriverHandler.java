@@ -17,7 +17,7 @@ public class DriverHandler {
 	public static WebDriver driver;
 	private static String hubUrl;
 
-	public static WebDriver getDriver(WebDriver mydriver, String browserName, String baseURL) throws Exception {
+	public WebDriver getDriver(WebDriver mydriver, String browserName) throws Exception {
 		// INFO:
 		// https://stackoverflow.com/questions/7883542/getting-the-computer-name-in-java
 		userName = System.getProperty("user.name");
@@ -38,8 +38,6 @@ public class DriverHandler {
 
 			hubUrl = "http://172.16.20.161:4444/wd/hub";
 			mydriver = new RemoteWebDriver(new URL(hubUrl), capabilities);
-			mydriver.manage().window().maximize();
-			mydriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		} 
 		else {
 			// local
@@ -64,7 +62,6 @@ public class DriverHandler {
 				System.setProperty("webdriver.chrome.driver", "C:\\Users\\" + userName
 						+ "\\Testautomatisierung\\Libraries\\chromedriver_win32\\chromedriver.exe");
 			}
-			mydriver.get(baseURL);
 		}
 		driver = mydriver;
 		System.out.println("browser: " + browserName + " | user: " + userName + "\n");

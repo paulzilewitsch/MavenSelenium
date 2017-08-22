@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class DriverHandler {
 	public static DesiredCapabilities capabilities;
@@ -16,13 +18,29 @@ public class DriverHandler {
 	public static String userName;
 	public static WebDriver driver;
 	private static String hubUrl;
+	public static String hostname = "Unknown";
+	public static String ip = "Unknown";
 
 	public WebDriver getDriver(String browserName) throws Exception {
 		// INFO:
 		// https://stackoverflow.com/questions/7883542/getting-the-computer-name-in-java
-		userName = System.getProperty("user.name");
+		//userName = System.getProperty("user.name");
+		try
+		{
+		    InetAddress addr;
+		    addr = InetAddress.getLocalHost();
+		    hostname = addr.getHostName();
+		    ip= addr.getHostAddress();
+		    System.out.println("Hostname: "+hostname);
+		    System.out.println("ip address : "+ip); 
+		}
+		catch (UnknownHostException ex)
+		{
+		    System.out.println("Hostname can not be resolved");
+		}
+		
 
-		if (userName == "WIN-0NMH0BG7FC5$") {
+		if (ip == "172.16.20.161") {
 
 			// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			// capabilities.setBrowserName("chrome");

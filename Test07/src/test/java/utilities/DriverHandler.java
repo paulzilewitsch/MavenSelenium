@@ -40,7 +40,7 @@ public class DriverHandler {
 		}
 		
 
-		if (ip == "172.16.20.161") {
+		if (ip == "172.16.20.161" || ip == "172.16.20.162") {
 
 			// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			// capabilities.setBrowserName("chrome");

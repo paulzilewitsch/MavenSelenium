@@ -39,8 +39,9 @@ public class DriverHandler {
 		    System.out.println("Hostname can not be resolved");
 		}
 		
-
-		if (ip == "172.16.20.161" || ip == "172.16.20.162") {
+		String testIP = "172.16.20.162";
+				
+		if (ip.equals(testIP)) {
 			System.out.println("Remote");
 			// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			// capabilities.setBrowserName("chrome");

@@ -41,7 +41,7 @@ public class DriverHandler {
 		
 
 		if (ip == "172.16.20.161" || ip == "172.16.20.162") {
-
+			System.out.println("Remote");
 			// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			// capabilities.setBrowserName("chrome");
 			// capabilities.setPlatform(Platform.WINDOWS);

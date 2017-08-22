@@ -17,7 +17,7 @@ public class DriverHandler {
 	public static WebDriver driver;
 	private static String hubUrl;
 
-	public WebDriver getDriver(WebDriver mydriver, String browserName) throws Exception {
+	public WebDriver getDriver(String browserName) throws Exception {
 		// INFO:
 		// https://stackoverflow.com/questions/7883542/getting-the-computer-name-in-java
 		userName = System.getProperty("user.name");
@@ -37,7 +37,7 @@ public class DriverHandler {
 			capabilities.setPlatform(Platform.WINDOWS);
 
 			hubUrl = "http://172.16.20.161:4444/wd/hub";
-			mydriver = new RemoteWebDriver(new URL(hubUrl), capabilities);
+			driver = new RemoteWebDriver(new URL(hubUrl), capabilities);
 		} 
 		else {
 			// local
@@ -52,18 +52,17 @@ public class DriverHandler {
 				System.setProperty("webdriver.ie.driver", "C:\\Users\\" + userName
 						+ "\\Testautomatisierung\\Libraries\\IEDriverServer_x64_3.4.0\\IEDriverServer.exe");
 
-				mydriver = new InternetExplorerDriver(capabilities);
-				mydriver.manage().window().maximize();
-				mydriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				driver = new InternetExplorerDriver(capabilities);
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			} else if (browserName == "Firefox") {
 				System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-				mydriver = new FirefoxDriver();
+				driver = new FirefoxDriver();
 			} else if (browserName == "Chrome") {
 				System.setProperty("webdriver.chrome.driver", "C:\\Users\\" + userName
 						+ "\\Testautomatisierung\\Libraries\\chromedriver_win32\\chromedriver.exe");
 			}
 		}
-		driver = mydriver;
 		System.out.println("browser: " + browserName + " | user: " + userName + "\n");
 		return driver;
 

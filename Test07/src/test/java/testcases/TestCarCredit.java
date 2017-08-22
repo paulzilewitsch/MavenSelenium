@@ -35,7 +35,7 @@ public class TestCarCredit
 		
 		DriverHandler handler = new DriverHandler();
 		
-		driver = handler.getDriver(driver, browserName);
+		driver = handler.getDriver(browserName);
 		driver.get(baseURL);
 //		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);

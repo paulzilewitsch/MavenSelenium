@@ -4,7 +4,7 @@
   <artifactId>Test02</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Selenium Demo</name>
-  <description>Selenium Demo</description>
+  <description>TestNG erster Versuch</description>
   
   <properties>
   	<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>

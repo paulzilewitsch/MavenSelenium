@@ -59,4 +59,5 @@
 		</plugins>
 	</build>
 
+	<description>Local and Remote Driver</description>
 </project>

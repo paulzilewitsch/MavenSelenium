@@ -57,4 +57,5 @@
         </plugin>
 	</plugins>
 </build>
+  <description>JUnit mit Selenium</description>
 </project>

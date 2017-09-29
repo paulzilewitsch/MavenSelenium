@@ -10,13 +10,14 @@ import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestCaculator {
+public class TestCalculator_Chrome {
 	private static WebDriver driver;
 	private static String nodeUrl;
 	private static StringBuffer verificationErrors = new StringBuffer();
@@ -28,10 +29,14 @@ public class TestCaculator {
 	public static void setUp() throws Exception 
 	{
 		nodeUrl = "http://172.16.20.161:4444/wd/hub";
-
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		capabilities.setBrowserName("firefox");
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		capabilities.setBrowserName("chrome");
 		capabilities.setPlatform(Platform.WINDOWS);
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
 		driver = new RemoteWebDriver(new URL(nodeUrl), capabilities);
 		baseURL = "https://www.commerzbank.de/portal/de/privatkunden/produkte/finanzieren-und-erwerben/baufinanzierung/baufinanzierung.html";

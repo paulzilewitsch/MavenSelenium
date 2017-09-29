@@ -7,7 +7,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ TestCaculator.class, TestCarCredit.class })
+@SuiteClasses({ TestCalculator_Firefox.class, TestCalculator_Chrome.class })
 public class AllTests 
 {
 	@BeforeClass

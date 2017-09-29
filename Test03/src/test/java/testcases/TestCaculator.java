@@ -156,6 +156,8 @@ public class TestCaculator {
 	@AfterClass
 	public static void tearDown() throws Exception {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.navigate().to("about:config");
+		driver.navigate().to("about:blank");
 		driver.quit();
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString))

@@ -110,7 +110,7 @@ public class TestCaculator {
 		driver.findElement(By.id("cse.venture.originalFunding.equityCash")).clear();
 		driver.findElement(By.id("cse.venture.originalFunding.equityCash")).sendKeys("0");
 		driver.findElement(By.id("cse.venture.priceDue")).clear();
-		driver.findElement(By.id("cse.venture.priceDue")).sendKeys("28.07.2017");
+		driver.findElement(By.id("cse.venture.priceDue")).sendKeys("02.10.2017");
 
 		driver.findElement(By.xpath("//tr[@id='b2cAppButtonLine']/td[2]/a/span")).click();
 
@@ -150,7 +150,7 @@ public class TestCaculator {
 		;
 
 		driver.findElement(By.id("cse.mainApplicant.contactDate")).clear();
-		driver.findElement(By.id("cse.mainApplicant.contactDate")).sendKeys("02.09.2017");
+		driver.findElement(By.id("cse.mainApplicant.contactDate")).sendKeys("04.10.2017");
 	}
 
 	@AfterClass

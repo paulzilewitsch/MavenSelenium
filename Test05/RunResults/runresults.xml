@@ -1,7 +1,7 @@
 <Results>
     <GeneralInfo>
         <Name/>
-        <RunStartTime>2017-07-20 06:22:16</RunStartTime>
+        <RunStartTime>2017-07-20 06:42:27</RunStartTime>
         <Timezone>Mitteleuropäische Zeit</Timezone>
         <OrchestrationToolName>JUnit</OrchestrationToolName>
         <OrchestrationToolVersion/>
@@ -11,10 +11,10 @@
         <Data>
             <Name>Run Results</Name>
             <Description><![CDATA[ ]]></Description>
-            <StartTime>2017-07-20 06:22:16</StartTime>
+            <StartTime>2017-07-20 06:42:27</StartTime>
             <Result>Passed</Result>
             <Links/>
-            <Duration>8</Duration>
+            <Duration>7</Duration>
             <Extension>
                 <Any>
                     <IconKey>Run</IconKey>
@@ -39,10 +39,10 @@
             <Data>
                 <Name>LeanFT</Name>
                 <Description><![CDATA[Version: N/A]]></Description>
-                <StartTime>2017-07-20 06:22:17</StartTime>
+                <StartTime>2017-07-20 06:42:28</StartTime>
                 <Result>Passed</Result>
                 <Links/>
-                <Duration>8</Duration>
+                <Duration>7</Duration>
                 <Extension>
                     <Any>
                         <IconKey>Package</IconKey>
@@ -54,10 +54,10 @@
                 <Data>
                     <Name><![CDATA[LeanFT.LeanFtTest]]></Name>
                     <Description/>
-                    <StartTime>2017-07-20 06:22:17</StartTime>
+                    <StartTime>2017-07-20 06:42:28</StartTime>
                     <Result>Passed</Result>
                     <Links/>
-                    <Duration>8</Duration>
+                    <Duration>7</Duration>
                     <Extension>
                         <Any>
                             <IconKey>Class</IconKey>
@@ -69,10 +69,10 @@
                     <Data>
                         <Name>test</Name>
                         <Description/>
-                        <StartTime>2017-07-20 06:22:17</StartTime>
+                        <StartTime>2017-07-20 06:42:28</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>6</Duration>
+                        <Duration>5</Duration>
                         <Extension>
                             <Any>
                                 <IconKey>Test</IconKey>
@@ -84,7 +84,7 @@
                         <Data>
                             <Name><![CDATA[Browser.launch]]></Name>
                             <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>&quot;FIREFOX&quot;</td></tr></table>]]></Description>
-                            <StartTime>2017-07-20 06:22:17</StartTime>
+                            <StartTime>2017-07-20 06:42:28</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>0</Duration>
@@ -112,7 +112,7 @@
                         <Data>
                             <Name><![CDATA[Web.Browser.Mozilla Firefox-Startseite]]></Name>
                             <Description/>
-                            <StartTime>2017-07-20 06:22:22</StartTime>
+                            <StartTime>2017-07-20 06:42:32</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -142,7 +142,7 @@
                             <Data>
                                 <Name>Verification</Name>
                                 <Description/>
-                                <StartTime>2017-07-20 06:22:22</StartTime>
+                                <StartTime>2017-07-20 06:42:32</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Extension>
@@ -166,7 +166,7 @@
                             <Data>
                                 <Name><![CDATA[Mozilla Firefox-Startseite.close]]></Name>
                                 <Description/>
-                                <StartTime>2017-07-20 06:22:22</StartTime>
+                                <StartTime>2017-07-20 06:42:32</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Duration>1</Duration>

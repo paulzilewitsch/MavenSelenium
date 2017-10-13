@@ -33,21 +33,21 @@ formatter.match({
   "location": "Step01_Calculator.Open_firefox_and_start_application()"
 });
 formatter.result({
-  "duration": 15059514059,
+  "duration": 16188685294,
   "status": "passed"
 });
 formatter.match({
   "location": "Step01_Calculator.Fill_all_required_fields()"
 });
 formatter.result({
-  "duration": 15319877946,
+  "duration": 20271880714,
   "status": "passed"
 });
 formatter.match({
   "location": "Step01_Calculator.Get_Calculation()"
 });
 formatter.result({
-  "duration": 750199117,
+  "duration": 389819935,
   "status": "passed"
 });
 });

@@ -30,7 +30,7 @@ public class Step01_Calculator
 
 	public String winHandleBefore;
 	
-	@Given("^Firefox is open, web application is startet and web formular is given$")
+	@Given("^Firefox is open, web application is started and web formular is given$")
 	public void Open_firefox_and_start_application() throws Throwable 
 	{
 //		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");

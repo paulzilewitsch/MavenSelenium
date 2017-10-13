@@ -143,4 +143,5 @@
 		</plugins>
 	</build>
 
+	<description>Cucumber</description>
 </project>

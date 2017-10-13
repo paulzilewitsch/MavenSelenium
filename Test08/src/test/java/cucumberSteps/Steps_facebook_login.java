@@ -15,7 +15,7 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class facebook_login {
+public class Steps_facebook_login {
 	
 	private static WebDriver driver;
 	private static StringBuffer verificationErrors = new StringBuffer();

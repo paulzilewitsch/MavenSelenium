@@ -54,14 +54,14 @@ public class facebook_login {
 		   driver.findElement(By.id("u_0_v")).click(); 
 		} 
 		
-		@Then ("^login should be unsuccessful$")
+		@Then("^login should be unsuccessful$")
 		public void validateRelogin() { 
-		   if(driver.getCurrentUrl().equalsIgnoreCase(
-		      "https://www.facebook.com/login.php?login_attempt=1&lwv=110")){ 
-		         System.out.println("Test Pass");
-		   } else { 
-		      System.out.println("Test Failed"); 
-		   } 
-		   driver.close(); 
-		}
+			   if(driver.getCurrentUrl().equalsIgnoreCase(
+			      "https://www.facebook.com/login.php?login_attempt=1&lwv=110")){ 
+			         System.out.println("Test Pass");
+			   } else { 
+			      System.out.println("Test Failed"); 
+			   } 
+			   driver.close(); 
+			}
 }
